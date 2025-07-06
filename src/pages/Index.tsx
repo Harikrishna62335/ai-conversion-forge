@@ -187,7 +187,7 @@ const Index = () => {
           <div className="animate-fade-in">
             <Badge className="mb-6 bg-brand-yellow/20 text-brand-yellow border-brand-yellow/30">
               <Award className="w-4 h-4 mr-2" />
-              Trusted by 500+ Companies
+              Trusted by 100+ Companies
             </Badge>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -196,7 +196,7 @@ const Index = () => {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-gray-200">
-              Stop losing revenue to manual processes. Our AI agents, chatbots, and automation workflows have helped 500+ companies increase efficiency by 300% while cutting operational costs by 60%.
+              Stop losing revenue to manual processes. Our AI agents, chatbots, and automation workflows have helped 100+ companies increase efficiency by 300% while cutting operational costs by 60%.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -313,7 +313,7 @@ const Index = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 text-center">
             <p className="text-white text-sm font-medium">
-              Trusted by 500+ companies • $2.4M saved in operational costs • 99.2% uptime
+              Trusted by 100+ companies • $2.4M saved in operational costs • 99.2% uptime
             </p>
           </div>
         </div>
@@ -410,7 +410,7 @@ const Index = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {[
-                { icon: <Users className="w-8 h-8" />, stat: "500+", label: "Successful Implementations" },
+                { icon: <Users className="w-8 h-8" />, stat: "100+", label: "Successful Implementations" },
                 { icon: <TrendingUp className="w-8 h-8" />, stat: "300%", label: "Average Efficiency Increase" },
                 { icon: <DollarSign className="w-8 h-8" />, stat: "$2.4M", label: "Client Cost Savings" },
                 { icon: <Award className="w-8 h-8" />, stat: "99.2%", label: "System Uptime" }
@@ -639,7 +639,7 @@ const Index = () => {
               Ready to 3X Your Efficiency with AI?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Join 500+ companies already saving millions with our AI automation
+              Join 100+ companies already saving millions with our AI automation
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -663,7 +663,7 @@ const Index = () => {
                 <span className="font-bold text-brand-yellow">100% Risk-Free</span>
               </div>
               <p className="text-gray-200">
-                30-day money-back guarantee • Free implementation support • No long-term contracts
+                30 days ROI guarantee • Free implementation support • No long-term contracts
               </p>
             </div>
           </div>
@@ -695,8 +695,7 @@ const Index = () => {
               </div>
               <div>
                 <h4 className="font-bold text-brand-yellow mb-2">Guarantee</h4>
-                <p className="text-gray-400">30-Day Money Back</p>
-                <p className="text-gray-400">ROI Guarantee</p>
+                <p className="text-gray-400">30 Days ROI Guarantee</p>
               </div>
             </div>
             
