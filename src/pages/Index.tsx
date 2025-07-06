@@ -323,8 +323,8 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Floating trust badges - Better Mobile Design */}
-        <div className="absolute bottom-2 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 w-full max-w-sm sm:max-w-none px-2 sm:px-0">
+        {/* Floating trust badges - Hidden on mobile */}
+        <div className="absolute bottom-2 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 w-full max-w-sm sm:max-w-none px-2 sm:px-0 hidden sm:block">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg px-2 sm:px-6 py-1.5 sm:py-3 text-center">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-1 sm:gap-0">
               <span className="text-white text-xs sm:text-sm font-medium">100+ trusted companies</span>
