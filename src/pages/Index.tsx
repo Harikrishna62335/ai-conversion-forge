@@ -22,7 +22,6 @@ import {
   Rocket
 } from "lucide-react";
 import heroImage from "@/assets/hero-ai-automation.jpg";
-import edgeSparkLogo from "@/assets/edge-spark-logo.png";
 
 const Index = () => {
   const services = [
@@ -176,7 +175,12 @@ const Index = () => {
       <header className="absolute top-0 left-0 right-0 z-30 bg-black/20 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center">
-            <img src={edgeSparkLogo} alt="Edge Spark AI" className="h-10 w-auto" />
+            <div className="flex items-center">
+              <div className="w-10 h-10 bg-brand-yellow rounded-lg flex items-center justify-center mr-3">
+                <span className="text-brand-black font-bold text-xl">E</span>
+              </div>
+              <span className="text-white text-xl font-bold">Edge Spark AI</span>
+            </div>
           </div>
         </div>
       </header>
@@ -685,7 +689,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <img src={edgeSparkLogo} alt="Edge Spark AI" className="h-8 w-auto mr-3" />
+              <div className="w-8 h-8 bg-brand-yellow rounded-lg flex items-center justify-center mr-3">
+                <span className="text-brand-black font-bold text-lg">E</span>
+              </div>
               <span className="text-2xl font-bold">Edge Spark AI</span>
             </div>
             <p className="text-gray-400 mb-8">
