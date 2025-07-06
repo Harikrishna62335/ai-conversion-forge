@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -176,9 +177,11 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-brand-yellow rounded-lg flex items-center justify-center mr-3">
-                <span className="text-brand-black font-bold text-xl">E</span>
-              </div>
+              <img 
+                src="/lovable-uploads/ac14db80-8114-451f-8580-da1f13f587b8.png" 
+                alt="Edge Spark AI Logo" 
+                className="w-10 h-10 mr-3"
+              />
               <span className="text-white text-xl font-bold">Edge Spark AI</span>
             </div>
           </div>
@@ -693,9 +696,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <div className="w-8 h-8 bg-brand-yellow rounded-lg flex items-center justify-center mr-3">
-                <span className="text-brand-black font-bold text-lg">E</span>
-              </div>
+              <img 
+                src="/lovable-uploads/ac14db80-8114-451f-8580-da1f13f587b8.png" 
+                alt="Edge Spark AI Logo" 
+                className="w-8 h-8 mr-3"
+              />
               <span className="text-2xl font-bold">Edge Spark AI</span>
             </div>
             <p className="text-gray-400 mb-8">
