@@ -323,122 +323,115 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* About Us Section */}
       <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge className="bg-brand-yellow/20 text-brand-yellow border-brand-yellow/30 mb-6">
+              <Rocket className="w-4 h-4 mr-2" />
+              Meet Edge Spark AI
+            </Badge>
+            
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-brand-black">
+              We're Building the Future of Business Automation
+            </h2>
+            
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              Edge Spark AI isn't just another agency. We're former engineers from Google and Meta who got tired of watching businesses struggle with outdated processes. So we built something better.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 text-left">
+              <div className="bg-brand-light-gray rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-brand-black mb-4">Our Mission</h3>
+                <p className="text-gray-700">
+                  Transform every business into an AI-powered powerhouse. We believe automation shouldn't be rocket science—it should just work, scale infinitely, and make your life easier.
+                </p>
+              </div>
+              
+              <div className="bg-brand-light-gray rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-brand-black mb-4">Our Promise</h3>
+                <p className="text-gray-700">
+                  No fluff, no false promises. Just AI solutions that actually move the needle. We measure success by your ROI, not our tech stack.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-brand-light-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
-              Choose Your AI Transformation Level
+              Why Edge Spark AI Hits Different
             </h2>
-            <Badge className="bg-red-100 text-red-600 border-red-200 mb-8">
-              <Clock className="w-4 h-4 mr-2" />
-              Limited spots available - Only 10 new clients per month
-            </Badge>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We're not here to sell you dreams. We're here to deliver results that make your competitors wonder what happened.
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                name: "Starter",
-                price: "$2,997",
-                period: "/month",
-                description: "Perfect for small businesses ready to automate",
-                features: [
-                  "AI Chatbot setup",
-                  "Basic workflow automation", 
-                  "Email support",
-                  "Monthly performance reports",
-                  "2 integrations included"
-                ],
-                cta: "Get Started",
-                popular: false
+                icon: <Zap className="w-8 h-8 text-brand-yellow" />,
+                title: "Zero BS, Maximum Impact",
+                description: "We skip the corporate fluff and get straight to what actually drives revenue. Your time is money—we respect both."
               },
               {
-                name: "Growth",
-                price: "$7,997", 
-                period: "/month",
-                description: "Ideal for growing companies seeking full automation",
-                features: [
-                  "Full AI agent suite",
-                  "Custom workflow development",
-                  "Priority support",
-                  "Weekly optimization calls",
-                  "Unlimited integrations",
-                  "Advanced analytics dashboard"
-                ],
-                cta: "Most Popular",
-                popular: true
+                icon: <Shield className="w-8 h-8 text-brand-yellow" />,
+                title: "Built by Ex-Big Tech",
+                description: "Our team architected systems at Google and Meta that handle billions of interactions. Your business gets enterprise-grade AI without the enterprise headaches."
               },
               {
-                name: "Enterprise",
-                price: "Custom",
-                period: "pricing",
-                description: "Complete AI transformation for large organizations",
-                features: [
-                  "Full AI transformation audit",
-                  "Custom AI development",
-                  "Dedicated success manager", 
-                  "24/7 priority support",
-                  "White-label solutions",
-                  "Advanced integrations",
-                  "Custom training programs"
-                ],
-                cta: "Contact Sales",
-                popular: false
+                icon: <TrendingUp className="w-8 h-8 text-brand-yellow" />,
+                title: "ROI-Obsessed Approach",
+                description: "Every line of code, every automation has one job: make you more money. We track metrics that matter, not vanity numbers."
+              },
+              {
+                icon: <Clock className="w-8 h-8 text-brand-yellow" />,
+                title: "Speed That Matters",
+                description: "While others take months to deploy, we have you seeing results in weeks. Because opportunities don't wait for perfect timing."
+              },
+              {
+                icon: <Users className="w-8 h-8 text-brand-yellow" />,
+                title: "Partnership, Not Vendor",
+                description: "We don't disappear after launch. Your success is our success. We stick around to optimize, improve, and scale with you."
+              },
+              {
+                icon: <Award className="w-8 h-8 text-brand-yellow" />,
+                title: "Future-Proof Foundation",
+                description: "We build AI systems that evolve with technology. What we create today will still be crushing it in 5 years."
               }
-            ].map((plan, index) => (
-              <Card key={index} className={`relative ${plan.popular ? 'ring-2 ring-brand-yellow shadow-glow' : 'shadow-card hover:shadow-elegant'} transition-all duration-300 bg-white`}>
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-brand-yellow text-brand-black font-bold px-4 py-1">
-                      Most Popular
-                    </Badge>
+            ].map((benefit, index) => (
+              <Card key={index} className="bg-white shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="p-8 text-center">
+                  <div className="mx-auto mb-6 w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center">
+                    {benefit.icon}
                   </div>
-                )}
-                
-                <CardHeader className="text-center pb-8">
-                  <CardTitle className="text-2xl font-bold text-brand-black mb-2">
-                    {plan.name}
-                  </CardTitle>
-                  <div className="mb-4">
-                    <span className="text-4xl font-bold text-brand-black">{plan.price}</span>
-                    <span className="text-gray-600">{plan.period}</span>
-                  </div>
-                  <CardDescription className="text-gray-600">
-                    {plan.description}
-                  </CardDescription>
-                </CardHeader>
-                
-                <CardContent className="space-y-4">
-                  {plan.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-brand-yellow mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
-                    </div>
-                  ))}
-                  
-                  <Button 
-                    variant={plan.popular ? "cta" : "outline"} 
-                    className="w-full mt-8"
-                    size="lg"
-                  >
-                    {plan.cta}
-                  </Button>
+                  <h3 className="text-xl font-bold text-brand-black mb-4">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
           </div>
           
-          <div className="text-center mt-12">
-            <div className="bg-green-50 border border-green-200 rounded-lg p-6 max-w-2xl mx-auto">
-              <div className="flex items-center justify-center mb-4">
-                <Shield className="w-6 h-6 text-green-600 mr-2" />
-                <span className="font-bold text-green-800">Risk-Free Guarantee</span>
-              </div>
-              <p className="text-green-700">
-                30-day money-back guarantee + Free implementation support. 
-                If you don't see measurable results, we'll refund every penny.
+          <div className="text-center mt-16">
+            <div className="bg-white rounded-lg p-8 max-w-3xl mx-auto shadow-card">
+              <h3 className="text-2xl font-bold text-brand-black mb-6">
+                The Bottom Line
+              </h3>
+              <p className="text-lg text-gray-700 mb-6">
+                You're not just hiring an AI agency. You're partnering with the team that's going to 3x your operational efficiency while your competitors are still figuring out what ChatGPT is.
               </p>
+              <Button variant="cta" size="lg" className="text-lg px-8 py-4">
+                Ready to Level Up?
+                <ArrowRight className="ml-2" />
+              </Button>
             </div>
           </div>
         </div>
