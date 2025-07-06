@@ -22,6 +22,7 @@ import {
   Rocket
 } from "lucide-react";
 import heroImage from "@/assets/hero-ai-automation.jpg";
+import edgeSparkLogo from "@/assets/edge-spark-logo.png";
 
 const Index = () => {
   const services = [
@@ -171,6 +172,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="absolute top-0 left-0 right-0 z-30 bg-black/20 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center">
+            <img src={edgeSparkLogo} alt="Edge Spark AI" className="h-10 w-auto" />
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative min-h-screen bg-gradient-hero flex items-center justify-center overflow-hidden">
         <div 
@@ -652,7 +662,7 @@ const Index = () => {
                 Claim Your Free AI Audit
                 <ArrowRight className="ml-2" />
               </Button>
-              <Button variant="outline-light" size="lg" className="text-lg px-8 py-4">
+              <Button variant="outline-light" size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://cal.com/gandla-harikrishnasai-juxwow/oral-gen-ai', '_blank')}>
                 Schedule a Demo Call
               </Button>
             </div>
@@ -675,8 +685,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <Bot className="w-8 h-8 text-brand-yellow mr-2" />
-              <span className="text-2xl font-bold">AI Automation Agency</span>
+              <img src={edgeSparkLogo} alt="Edge Spark AI" className="h-8 w-auto mr-3" />
+              <span className="text-2xl font-bold">Edge Spark AI</span>
             </div>
             <p className="text-gray-400 mb-8">
               Transforming businesses with cutting-edge AI automation solutions
@@ -685,8 +695,8 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto text-sm">
               <div>
                 <h4 className="font-bold text-brand-yellow mb-2">Contact</h4>
-                <p className="text-gray-400">hello@aiautomation.agency</p>
-                <p className="text-gray-400">+1 (555) 123-4567</p>
+                <p className="text-gray-400">contactus@edgesparkai.com</p>
+                <p className="text-gray-400">+91-9505050474</p>
               </div>
               <div>
                 <h4 className="font-bold text-brand-yellow mb-2">Support</h4>
