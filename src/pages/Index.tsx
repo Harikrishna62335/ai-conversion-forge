@@ -200,7 +200,12 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-4"
+                onClick={() => window.open('https://aiaudit.edgesparkai.com/', '_blank')}
+              >
                 Get Your Free AI Audit
                 <ArrowRight className="ml-2" />
               </Button>
@@ -340,7 +345,12 @@ const Index = () => {
               ))}
             </div>
             
-            <Button variant="cta" size="lg" className="mt-12 text-lg px-8 py-4">
+            <Button 
+              variant="cta" 
+              size="lg" 
+              className="mt-12 text-lg px-8 py-4"
+              onClick={() => window.open('https://aiaudit.edgesparkai.com/', '_blank')}
+            >
               Stop the Revenue Leak - Get Started
               <Rocket className="ml-2" />
             </Button>
@@ -570,7 +580,12 @@ const Index = () => {
               <p className="text-lg text-gray-700 mb-6">
                 You're not just hiring an AI agency. You're partnering with the team that's going to 3x your operational efficiency while your competitors are still figuring out what ChatGPT is.
               </p>
-              <Button variant="cta" size="lg" className="text-lg px-8 py-4">
+               <Button 
+                variant="cta" 
+                size="lg" 
+                className="text-lg px-8 py-4"
+                onClick={() => window.open('https://aiaudit.edgesparkai.com/', '_blank')}
+              >
                 Ready to Level Up?
                 <ArrowRight className="ml-2" />
               </Button>
@@ -628,7 +643,12 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-4"
+                onClick={() => window.open('https://aiaudit.edgesparkai.com/', '_blank')}
+              >
                 Claim Your Free AI Audit
                 <ArrowRight className="ml-2" />
               </Button>
