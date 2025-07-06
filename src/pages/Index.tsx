@@ -323,11 +323,15 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Floating trust badges */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 text-center">
-            <p className="text-white text-sm font-medium">
-              Trusted by 100+ companies • $2.4M saved in operational costs • 99.2% uptime
+        {/* Floating trust badges - Mobile Optimized */}
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 w-full px-4 sm:px-0 sm:w-auto">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 sm:px-6 py-2 sm:py-3 text-center">
+            <p className="text-white text-xs sm:text-sm font-medium leading-relaxed">
+              <span className="block sm:inline">Trusted by 100+ companies</span>
+              <span className="hidden sm:inline"> • </span>
+              <span className="block sm:inline">$2.4M saved in operational costs</span>
+              <span className="hidden sm:inline"> • </span>
+              <span className="block sm:inline">99.2% uptime</span>
             </p>
           </div>
         </div>
