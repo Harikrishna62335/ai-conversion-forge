@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { 
   Bot, 
   MessageCircle, 
@@ -105,6 +106,69 @@ const Index = () => {
     }
   ];
 
+  const successStories = [
+    {
+      company: "TechFlow Solutions",
+      industry: "Software Development",
+      challenge: "Overwhelming customer support tickets",
+      solution: "AI Chatbot + Workflow Automation",
+      results: [
+        "87% reduction in support ticket volume",
+        "$180K annual savings in support costs",
+        "2.5x faster response times"
+      ],
+      metrics: "87% ticket reduction"
+    },
+    {
+      company: "RetailMax Corp",
+      industry: "E-commerce",
+      challenge: "Missing leads during off-hours", 
+      solution: "AI Sales Bot + Lead Qualification",
+      results: [
+        "340% increase in qualified leads",
+        "24/7 lead capture without staff",
+        "$2.1M additional revenue in 6 months"
+      ],
+      metrics: "340% lead increase"
+    },
+    {
+      company: "GlobalManufacturing Inc",
+      industry: "Manufacturing",
+      challenge: "Manual inventory management chaos",
+      solution: "AI Workflow Automation + Predictive Analytics",
+      results: [
+        "95% reduction in manual data entry",
+        "$450K saved in operational costs",
+        "Zero inventory stockouts since implementation"
+      ],
+      metrics: "$450K cost savings"
+    },
+    {
+      company: "HealthTech Innovations",
+      industry: "Healthcare",
+      challenge: "Patient scheduling bottlenecks",
+      solution: "AI Voice Bot + Smart Scheduling",
+      results: [
+        "78% reduction in scheduling calls",
+        "5x more appointments booked daily",
+        "99.2% patient satisfaction score"
+      ],
+      metrics: "5x booking increase"
+    },
+    {
+      company: "FinanceFirst Consulting",
+      industry: "Financial Services",
+      challenge: "Slow client onboarding process",
+      solution: "AI Document Processing + Automation",
+      results: [
+        "92% faster client onboarding",
+        "$75K monthly processing cost savings",
+        "Zero compliance errors in 8 months"
+      ],
+      metrics: "92% faster onboarding"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -140,9 +204,87 @@ const Index = () => {
                 Get Your Free AI Audit
                 <ArrowRight className="ml-2" />
               </Button>
-              <Button variant="outline-light" size="lg" className="text-lg px-8 py-4">
-                View Success Stories
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline-light" size="lg" className="text-lg px-8 py-4">
+                    View Success Stories
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-white">
+                  <DialogHeader>
+                    <DialogTitle className="text-3xl font-bold text-brand-black text-center mb-2">
+                      Real Success Stories from Real Clients
+                    </DialogTitle>
+                    <p className="text-gray-600 text-center">
+                      See how we've transformed businesses across industries with AI automation
+                    </p>
+                  </DialogHeader>
+                  
+                  <div className="grid gap-6 mt-6">
+                    {successStories.map((story, index) => (
+                      <Card key={index} className="border-2 hover:border-brand-yellow/30 transition-all duration-300">
+                        <CardContent className="p-6">
+                          <div className="flex flex-col md:flex-row gap-6">
+                            <div className="md:w-1/3">
+                              <div className="flex items-center gap-2 mb-2">
+                                <div className="w-3 h-3 bg-brand-yellow rounded-full"></div>
+                                <h3 className="text-xl font-bold text-brand-black">{story.company}</h3>
+                              </div>
+                              <Badge className="bg-brand-yellow/10 text-brand-yellow border-brand-yellow/20 mb-3">
+                                {story.industry}
+                              </Badge>
+                              <div className="space-y-2">
+                                <div>
+                                  <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Challenge:</span>
+                                  <p className="text-gray-700">{story.challenge}</p>
+                                </div>
+                                <div>
+                                  <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Solution:</span>
+                                  <p className="text-brand-black font-medium">{story.solution}</p>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div className="md:w-2/3">
+                              <div className="mb-4">
+                                <h4 className="text-lg font-bold text-brand-black mb-3">Results Achieved:</h4>
+                                <ul className="space-y-2">
+                                  {story.results.map((result, resultIndex) => (
+                                    <li key={resultIndex} className="flex items-start">
+                                      <CheckCircle className="w-5 h-5 text-brand-yellow mr-3 flex-shrink-0 mt-0.5" />
+                                      <span className="text-gray-700">{result}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                              
+                              <div className="bg-brand-yellow/5 rounded-lg p-4 border border-brand-yellow/20">
+                                <div className="flex items-center">
+                                  <TrendingUp className="w-5 h-5 text-brand-yellow mr-2" />
+                                  <span className="text-brand-black font-bold">Key Metric: {story.metrics}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                  
+                  <div className="text-center mt-8 p-6 bg-brand-light-gray rounded-lg">
+                    <h3 className="text-2xl font-bold text-brand-black mb-4">
+                      Ready to Write Your Success Story?
+                    </h3>
+                    <p className="text-gray-600 mb-6">
+                      Join these companies and transform your business with AI automation
+                    </p>
+                    <Button variant="cta" size="lg" className="text-lg px-8 py-4">
+                      Get Your Free AI Audit
+                      <ArrowRight className="ml-2" />
+                    </Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
             
             <div className="flex flex-wrap justify-center items-center gap-8 text-sm">
