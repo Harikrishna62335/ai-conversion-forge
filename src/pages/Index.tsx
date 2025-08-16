@@ -458,6 +458,268 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Portfolio Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
+              Our Portfolio of Success
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Real projects, real results. Explore some of our latest AI automation implementations.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Project 1: E-commerce AI Chatbot */}
+            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
+              <div className="h-48 bg-gradient-to-br from-brand-yellow/20 to-brand-yellow/5 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <MessageCircle className="w-16 h-16 text-brand-yellow" />
+                </div>
+                <Badge className="absolute top-4 left-4 bg-brand-yellow text-brand-black">
+                  E-commerce
+                </Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-brand-black mb-2">
+                  AI Sales Assistant for Fashion Retailer
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  24/7 customer support chatbot with product recommendations and order tracking integration.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    340% increase in qualified leads
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    87% customer satisfaction score
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    $2.1M additional revenue
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="secondary">AI Chatbot</Badge>
+                  <Badge variant="secondary">Lead Generation</Badge>
+                  <Badge variant="secondary">CRM Integration</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 2: Healthcare Appointment Bot */}
+            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
+              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-50 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Bot className="w-16 h-16 text-blue-600" />
+                </div>
+                <Badge className="absolute top-4 left-4 bg-blue-600 text-white">
+                  Healthcare
+                </Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-brand-black mb-2">
+                  Voice Bot for Medical Scheduling
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  AI voice assistant handling patient appointments, reminders, and basic medical inquiries.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    78% reduction in manual calls
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    5x more appointments booked
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    99.2% patient satisfaction
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="secondary">Voice AI</Badge>
+                  <Badge variant="secondary">Scheduling</Badge>
+                  <Badge variant="secondary">HIPAA Compliant</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 3: Manufacturing Workflow */}
+            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
+              <div className="h-48 bg-gradient-to-br from-green-100 to-green-50 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Workflow className="w-16 h-16 text-green-600" />
+                </div>
+                <Badge className="absolute top-4 left-4 bg-green-600 text-white">
+                  Manufacturing
+                </Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-brand-black mb-2">
+                  Smart Inventory Management System
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  AI-powered workflow automation for inventory tracking, reordering, and supply chain optimization.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    95% reduction in manual entry
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    $450K operational savings
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    Zero stockouts achieved
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="secondary">Workflow AI</Badge>
+                  <Badge variant="secondary">Predictive Analytics</Badge>
+                  <Badge variant="secondary">ERP Integration</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 4: Financial Services */}
+            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
+              <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-50 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <DollarSign className="w-16 h-16 text-purple-600" />
+                </div>
+                <Badge className="absolute top-4 left-4 bg-purple-600 text-white">
+                  Finance
+                </Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-brand-black mb-2">
+                  AI Document Processing Platform
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Automated client onboarding with intelligent document processing and compliance checking.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    92% faster onboarding
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    $75K monthly savings
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    Zero compliance errors
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="secondary">Document AI</Badge>
+                  <Badge variant="secondary">Compliance</Badge>
+                  <Badge variant="secondary">OCR Processing</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 5: Real Estate */}
+            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
+              <div className="h-48 bg-gradient-to-br from-orange-100 to-orange-50 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Globe className="w-16 h-16 text-orange-600" />
+                </div>
+                <Badge className="absolute top-4 left-4 bg-orange-600 text-white">
+                  Real Estate
+                </Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-brand-black mb-2">
+                  Virtual Property Assistant
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  AI-powered lead qualification system with automated property tours and client follow-up.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    450% increase in qualified leads
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    24/7 property information
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    65% faster closings
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="secondary">Lead Qualification</Badge>
+                  <Badge variant="secondary">CRM Sync</Badge>
+                  <Badge variant="secondary">Virtual Tours</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 6: SaaS Platform */}
+            <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
+              <div className="h-48 bg-gradient-to-br from-red-100 to-red-50 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Smartphone className="w-16 h-16 text-red-600" />
+                </div>
+                <Badge className="absolute top-4 left-4 bg-red-600 text-white">
+                  SaaS
+                </Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-brand-black mb-2">
+                  Customer Success AI Agent
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Intelligent support system that handles tickets, onboarding, and proactive customer success outreach.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    87% ticket resolution rate
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    3x faster response times
+                  </div>
+                  <div className="flex items-center text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    40% increase in retention
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="secondary">Support AI</Badge>
+                  <Badge variant="secondary">Customer Success</Badge>
+                  <Badge variant="secondary">Proactive Outreach</Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button 
+              variant="cta" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => window.open('https://aiaudit.edgesparkai.com/', '_blank')}
+            >
+              Start Your AI Project Today
+              <ArrowRight className="ml-2" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 bg-brand-light-gray">
         <div className="container mx-auto px-4">
