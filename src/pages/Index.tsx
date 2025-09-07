@@ -179,7 +179,7 @@ const Index = () => {
             <div className="flex items-center">
               <img 
                 src="/lovable-uploads/ac14db80-8114-451f-8580-da1f13f587b8.png" 
-                alt="Edge Spark AI - AI Automation Solutions Company Logo" 
+                alt="Edge Spark AI logo - Leading AI automation agency specializing in chatbots, voicebots, and workflow automation" 
                 className="w-10 h-10 mr-3"
                 width="40"
                 height="40"
@@ -201,8 +201,7 @@ const Index = () => {
               backgroundPosition: 'center',
               backgroundBlendMode: 'overlay'
             }}
-            role="img"
-            aria-label="AI automation technology background showing modern business transformation"
+            aria-hidden="true"
           />
         
         <div className="relative z-20 container mx-auto px-4 text-center text-white">
@@ -212,12 +211,12 @@ const Index = () => {
               Trusted by 100+ Companies
             </Badge>
             
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Transform Your Business with 
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" role="banner">
+              Transform Your Business with
               <span className="text-brand-yellow"> AI Automation</span> That Actually Works
             </h1>
             
-            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-gray-200">
+            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-gray-200" role="doc-subtitle">
               Stop losing revenue to manual processes. Our AI agents, chatbots, and automation workflows have helped 100+ companies increase efficiency by 300% while cutting operational costs by 60%.
             </p>
             
@@ -349,7 +348,7 @@ const Index = () => {
         <section className="py-20 bg-brand-light-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black" role="heading" aria-level="2">
               Your Competition Is Already Using AI While You're Still...
             </h2>
             
@@ -388,7 +387,7 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black" role="heading" aria-level="2">
               The Complete AI Automation Suite Your Business Needs
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -403,7 +402,7 @@ const Index = () => {
                   <div className="mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-2xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
+                  <CardTitle className="text-2xl font-bold text-brand-black mb-2" role="heading" aria-level="3">
                     {service.title}
                   </CardTitle>
                   <CardDescription className="text-gray-600 text-lg">
@@ -430,7 +429,7 @@ const Index = () => {
       <section className="py-20 bg-brand-black text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8" role="heading" aria-level="2">
               Why Industry Leaders Choose Us
             </h2>
             
@@ -467,7 +466,7 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black" role="heading" aria-level="2">
               Our Portfolio of Success
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -480,14 +479,14 @@ const Index = () => {
             <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
               <div className="h-48 bg-gradient-to-br from-brand-yellow/20 to-brand-yellow/5 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <MessageCircle className="w-16 h-16 text-brand-yellow" />
+                  <MessageCircle className="w-16 h-16 text-brand-yellow" aria-hidden="true" />
                 </div>
                 <Badge className="absolute top-4 left-4 bg-brand-yellow text-brand-black">
                   E-commerce
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level="3">
                   AI Sales Assistant for Fashion Retailer
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -495,15 +494,15 @@ const Index = () => {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     340% increase in qualified leads
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     87% customer satisfaction score
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     $2.1M additional revenue
                   </div>
                 </div>
@@ -519,14 +518,14 @@ const Index = () => {
             <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-50 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Bot className="w-16 h-16 text-blue-600" />
+                  <Bot className="w-16 h-16 text-blue-600" aria-hidden="true" />
                 </div>
                 <Badge className="absolute top-4 left-4 bg-blue-600 text-white">
                   Healthcare
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level="3">
                   Voice Bot for Medical Scheduling
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -534,15 +533,15 @@ const Index = () => {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     78% reduction in manual calls
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     5x more appointments booked
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     99.2% patient satisfaction
                   </div>
                 </div>
@@ -558,14 +557,14 @@ const Index = () => {
             <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
               <div className="h-48 bg-gradient-to-br from-green-100 to-green-50 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Workflow className="w-16 h-16 text-green-600" />
+                  <Workflow className="w-16 h-16 text-green-600" aria-hidden="true" />
                 </div>
                 <Badge className="absolute top-4 left-4 bg-green-600 text-white">
                   Manufacturing
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level="3">
                   Smart Inventory Management System
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -573,15 +572,15 @@ const Index = () => {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     95% reduction in manual entry
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     $450K operational savings
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     Zero stockouts achieved
                   </div>
                 </div>
@@ -597,14 +596,14 @@ const Index = () => {
             <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
               <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-50 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <DollarSign className="w-16 h-16 text-purple-600" />
+                  <DollarSign className="w-16 h-16 text-purple-600" aria-hidden="true" />
                 </div>
                 <Badge className="absolute top-4 left-4 bg-purple-600 text-white">
                   Finance
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level="3">
                   AI Document Processing Platform
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -612,15 +611,15 @@ const Index = () => {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     92% faster onboarding
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     $75K monthly savings
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     Zero compliance errors
                   </div>
                 </div>
@@ -636,14 +635,14 @@ const Index = () => {
             <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
               <div className="h-48 bg-gradient-to-br from-orange-100 to-orange-50 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Globe className="w-16 h-16 text-orange-600" />
+                  <Globe className="w-16 h-16 text-orange-600" aria-hidden="true" />
                 </div>
                 <Badge className="absolute top-4 left-4 bg-orange-600 text-white">
                   Real Estate
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level="3">
                   Virtual Property Assistant
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -651,15 +650,15 @@ const Index = () => {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     450% increase in qualified leads
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     24/7 property information
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     65% faster closings
                   </div>
                 </div>
@@ -675,14 +674,14 @@ const Index = () => {
             <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
               <div className="h-48 bg-gradient-to-br from-red-100 to-red-50 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Smartphone className="w-16 h-16 text-red-600" />
+                  <Smartphone className="w-16 h-16 text-red-600" aria-hidden="true" />
                 </div>
                 <Badge className="absolute top-4 left-4 bg-red-600 text-white">
                   SaaS
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level="3">
                   Customer Success AI Agent
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -690,15 +689,15 @@ const Index = () => {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     87% ticket resolution rate
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     3x faster response times
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand-yellow mr-2" aria-hidden="true" />
                     40% increase in retention
                   </div>
                 </div>
@@ -729,7 +728,7 @@ const Index = () => {
       <section className="py-20 bg-brand-light-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black" role="heading" aria-level="2">
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600">Real results from real businesses</p>
@@ -767,12 +766,12 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-brand-yellow/20 text-brand-yellow border-brand-yellow/30 mb-6">
+            <Badge className="bg-brand-yellow/20 text-brand-yellow border-brand-yellow/30 mb-6" role="banner">
               <Rocket className="w-4 h-4 mr-2" />
               Meet Edge Spark AI
             </Badge>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-brand-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-brand-black" role="heading" aria-level="2">
               We're Building the Future of Business Automation
             </h2>
             
@@ -782,14 +781,14 @@ const Index = () => {
             
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div className="bg-brand-light-gray rounded-lg p-6">
-                <h3 className="text-2xl font-bold text-brand-black mb-4">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-brand-black mb-4" role="heading" aria-level="3">Our Mission</h3>
                 <p className="text-gray-700">
                   Transform every business into an AI-powered powerhouse. We believe automation shouldn't be rocket science—it should just work, scale infinitely, and make your life easier.
                 </p>
               </div>
               
               <div className="bg-brand-light-gray rounded-lg p-6">
-                <h3 className="text-2xl font-bold text-brand-black mb-4">Our Promise</h3>
+                <h3 className="text-2xl font-bold text-brand-black mb-4" role="heading" aria-level="3">Our Promise</h3>
                 <p className="text-gray-700">
                   No fluff, no false promises. Just AI solutions that actually move the needle. We measure success by your ROI, not our tech stack.
                 </p>
@@ -803,7 +802,7 @@ const Index = () => {
       <section className="py-20 bg-brand-light-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black" role="heading" aria-level="2">
               Why Edge Spark AI Hits Different
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -814,32 +813,32 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                icon: <Zap className="w-8 h-8 text-brand-yellow" />,
+                icon: <Zap className="w-8 h-8 text-brand-yellow" aria-hidden="true" />,
                 title: "Zero BS, Maximum Impact",
                 description: "We skip the corporate fluff and get straight to what actually drives revenue. Your time is money—we respect both."
               },
               {
-                icon: <Shield className="w-8 h-8 text-brand-yellow" />,
+                icon: <Shield className="w-8 h-8 text-brand-yellow" aria-hidden="true" />,
                 title: "Built by Ex-Big Tech",
                 description: "Our team architected systems at Google and Meta that handle billions of interactions. Your business gets enterprise-grade AI without the enterprise headaches."
               },
               {
-                icon: <TrendingUp className="w-8 h-8 text-brand-yellow" />,
+                icon: <TrendingUp className="w-8 h-8 text-brand-yellow" aria-hidden="true" />,
                 title: "ROI-Obsessed Approach",
                 description: "Every line of code, every automation has one job: make you more money. We track metrics that matter, not vanity numbers."
               },
               {
-                icon: <Clock className="w-8 h-8 text-brand-yellow" />,
+                icon: <Clock className="w-8 h-8 text-brand-yellow" aria-hidden="true" />,
                 title: "Speed That Matters",
                 description: "While others take months to deploy, we have you seeing results in weeks. Because opportunities don't wait for perfect timing."
               },
               {
-                icon: <Users className="w-8 h-8 text-brand-yellow" />,
+                icon: <Users className="w-8 h-8 text-brand-yellow" aria-hidden="true" />,
                 title: "Partnership, Not Vendor",
                 description: "We don't disappear after launch. Your success is our success. We stick around to optimize, improve, and scale with you."
               },
               {
-                icon: <Award className="w-8 h-8 text-brand-yellow" />,
+                icon: <Award className="w-8 h-8 text-brand-yellow" aria-hidden="true" />,
                 title: "Future-Proof Foundation",
                 description: "We build AI systems that evolve with technology. What we create today will still be crushing it in 5 years."
               }
@@ -849,7 +848,7 @@ const Index = () => {
                   <div className="mx-auto mb-6 w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center">
                     {benefit.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-brand-black mb-4">
+                  <h3 className="text-xl font-bold text-brand-black mb-4" role="heading" aria-level="3">
                     {benefit.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -862,7 +861,7 @@ const Index = () => {
           
           <div className="text-center mt-16">
             <div className="bg-white rounded-lg p-8 max-w-3xl mx-auto shadow-card">
-              <h3 className="text-2xl font-bold text-brand-black mb-6">
+              <h3 className="text-2xl font-bold text-brand-black mb-6" role="heading" aria-level="3">
                 The Bottom Line
               </h3>
               <p className="text-lg text-gray-700 mb-6">
@@ -886,7 +885,7 @@ const Index = () => {
       <section className="py-20 bg-brand-light-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black" role="heading" aria-level="2">
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">Get answers to common concerns</p>
@@ -923,7 +922,7 @@ const Index = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6" role="heading" aria-level="2">
               Ready to 3X Your Efficiency with AI?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
@@ -965,7 +964,7 @@ const Index = () => {
             <div className="flex items-center justify-center mb-4">
               <img 
                 src="/lovable-uploads/ac14db80-8114-451f-8580-da1f13f587b8.png" 
-                alt="Edge Spark AI - AI Automation Solutions Company Logo" 
+                alt="Edge Spark AI logo - Leading AI automation agency" 
                 className="w-8 h-8 mr-3"
                 width="32"
                 height="32"
@@ -978,17 +977,17 @@ const Index = () => {
             
             <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto text-sm">
               <div>
-                <h4 className="font-bold text-brand-yellow mb-2">Contact</h4>
+                <h4 className="font-bold text-brand-yellow mb-2" role="heading" aria-level="4">Contact</h4>
                 <p className="text-gray-400">contactus@edgesparkai.com</p>
                 <p className="text-gray-400">+91-9505050474</p>
               </div>
               <div>
-                <h4 className="font-bold text-brand-yellow mb-2">Support</h4>
+                <h4 className="font-bold text-brand-yellow mb-2" role="heading" aria-level="4">Support</h4>
                 <p className="text-gray-400">24/7 Technical Support</p>
                 <p className="text-gray-400">Implementation Assistance</p>
               </div>
               <div>
-                <h4 className="font-bold text-brand-yellow mb-2">Guarantee</h4>
+                <h4 className="font-bold text-brand-yellow mb-2" role="heading" aria-level="4">Guarantee</h4>
                 <p className="text-gray-400">30 Days ROI Guarantee</p>
               </div>
             </div>
