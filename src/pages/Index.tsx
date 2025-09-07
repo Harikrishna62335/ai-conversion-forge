@@ -175,30 +175,35 @@ const Index = () => {
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-30 bg-black/20 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center">
+          <nav className="flex items-center" role="navigation" aria-label="Main navigation">
             <div className="flex items-center">
               <img 
                 src="/lovable-uploads/ac14db80-8114-451f-8580-da1f13f587b8.png" 
-                alt="Edge Spark AI Logo" 
+                alt="Edge Spark AI - AI Automation Solutions Company Logo" 
                 className="w-10 h-10 mr-3"
+                width="40"
+                height="40"
               />
               <span className="text-white text-xl font-bold">Edge Spark AI</span>
             </div>
-          </div>
+          </nav>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-hero flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-black/60 z-10"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundBlendMode: 'overlay'
-          }}
-        />
+      <main>
+        <section className="relative min-h-screen bg-gradient-hero flex items-center justify-center overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-black/60 z-10"
+            style={{
+              backgroundImage: `url(${heroImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundBlendMode: 'overlay'
+            }}
+            role="img"
+            aria-label="AI automation technology background showing modern business transformation"
+          />
         
         <div className="relative z-20 container mx-auto px-4 text-center text-white">
           <div className="animate-fade-in">
@@ -338,10 +343,10 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
-      {/* Problem Agitation Section */}
-      <section className="py-20 bg-brand-light-gray">
+        {/* Problem Agitation Section */}
+        <section className="py-20 bg-brand-light-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-black">
@@ -394,11 +399,11 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-white border-2 hover:border-brand-yellow/20">
-                <CardHeader className="text-center pb-4">
+                 <CardHeader className="text-center pb-4">
                   <div className="mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-2xl font-bold text-brand-black mb-2">
+                  <CardTitle className="text-2xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
                     {service.title}
                   </CardTitle>
                   <CardDescription className="text-gray-600 text-lg">
@@ -466,7 +471,7 @@ const Index = () => {
               Our Portfolio of Success
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real projects, real results. Explore some of our latest AI automation implementations.
+              Real projects, real results. Explore some of our latest AI automation implementations across industries.
             </p>
           </div>
           
@@ -482,7 +487,7 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2">
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
                   AI Sales Assistant for Fashion Retailer
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -521,7 +526,7 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2">
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
                   Voice Bot for Medical Scheduling
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -560,7 +565,7 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2">
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
                   Smart Inventory Management System
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -599,7 +604,7 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2">
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
                   AI Document Processing Platform
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -638,7 +643,7 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2">
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
                   Virtual Property Assistant
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -677,7 +682,7 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-black mb-2">
+                <h3 className="text-xl font-bold text-brand-black mb-2" role="heading" aria-level={3}>
                   Customer Success AI Agent
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -960,8 +965,10 @@ const Index = () => {
             <div className="flex items-center justify-center mb-4">
               <img 
                 src="/lovable-uploads/ac14db80-8114-451f-8580-da1f13f587b8.png" 
-                alt="Edge Spark AI Logo" 
+                alt="Edge Spark AI - AI Automation Solutions Company Logo" 
                 className="w-8 h-8 mr-3"
+                width="32"
+                height="32"
               />
               <span className="text-2xl font-bold">Edge Spark AI</span>
             </div>
@@ -992,6 +999,7 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      </main>
     </div>
   );
 };
